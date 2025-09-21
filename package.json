@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
@@ -12,11 +14,12 @@
     "@mdi/font": "^7.4.47",
     "axios": "^1.12.2",
     "vue": "^3.5.18",
-    "vuetify": "^3.9.6"
+    "vuetify": "^3.10.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/tsconfig": "^0.7.0",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.8.3",
     "vite": "^7.1.2",
     "vue-tsc": "^3.0.5"
